@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.header-DA {
+    background-color: #333333;
+    padding: 20px 0;
+    border-bottom: 2px solid #cd2b2b;
+    position: relative;
+}
+
+.header-DA h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f8f9fa;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-DA p {
+    font-size: 1.2em;
+    color: #cd2b2b;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.header-DA h1:hover,
+.header-DA p:hover {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.header-DA h1, .header-DA p {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+.header-DA .social-icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-DA .social-icons a {
+    color: #f8f9fa;
+    font-size: 1.5em;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.header-DA .social-icons a:hover {
+    color: #cd2b2b;
+}
+
+
+.nav-bar {
+    margin-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #cd2b2b;
+    border-radius: 5px;
+}
+
+
+.img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25%;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.arrow-toggle {
+    font-size: 2em;
+    color: #cd2b2b;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-toggle:hover {
+    transform: scale(1.2); 
+}
+
+.hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#toggle-text:checked + .arrow-toggle + .hidden-text {
+    max-height: 500px; 
+}
+
+.hidden-text p {
+    animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

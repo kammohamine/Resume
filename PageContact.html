@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMLI Mohamed - Contact</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="text-center py-4 bg-dark text-white header-DA">
+        <h1 class="header-name">KAMLI Mohamed</h1>
+        <p class="header-job">Développeur</p>
+        <div class="social-icons">
+            <a href="https://github.com/kammohamine" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-kamli-242440148/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="PageAcceuil.html">Accueil</a></li>
+                <li><a href="PageExperience.html">Expérience</a></li>
+                <li><a href="PageFormation.html">Formation</a></li>
+                <li><a href="PageContact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center text-white mb-4">Contact</h2>
+                    <form id="contact-form" action="https://formspree.io/f/mjkbnraz" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="text-white">Nom</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
